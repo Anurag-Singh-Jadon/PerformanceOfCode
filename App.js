@@ -15,6 +15,7 @@ import {
   View,
 } from 'react-native';
 import FlatListPerformance from './src/Screens/FlatListPerformance';
+import Memo from './src/Screens/Memo';
 import UseCallback from './src/Screens/UseCallback';
 
 
@@ -26,7 +27,7 @@ const App = () => {
 
   return (
   
-      <UseCallback/>
+      <Memo/>
   
   
   );
