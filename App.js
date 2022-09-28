@@ -17,6 +17,7 @@ import {
 import FlatListPerformance from './src/Screens/FlatListPerformance';
 import Memo from './src/Screens/Memo';
 import UseCallback from './src/Screens/UseCallback';
+import UseMemoHook from './src/Screens/UseMemoHook';
 
 
 
@@ -27,7 +28,7 @@ const App = () => {
 
   return (
   
-      <Memo/>
+      <UseMemoHook/>
   
   
   );
