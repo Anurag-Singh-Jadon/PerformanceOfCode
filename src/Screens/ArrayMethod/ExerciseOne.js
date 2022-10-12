@@ -24,46 +24,46 @@ const ExerciseOne = () => {
 //5-How many people are there in each department?
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-1-What is the average income of all the people in the Array?
+// 1-What is the average income of all the people in the Array?
 
 //const averageSalary = people.reduce((accumulator,people) => accumulator + people.salary)              ==> Approach One(Output)  [object Object]3500380004000041000320004600042000340004900039000
 //const averageSalary = people.reduce((accumulator,people) => accumulator + parseInt(people.salary))  ==> Approach two(Output)  [object Object]3500380004000041000320004600042000340004900039000
 //const averageSalary = people.reduce((accumulator,people) => accumulator + parseInt(people.salary),0) ===>Approach three        369000    
-const averageSalary = people.reduce((accumulator,people) => accumulator + parseInt(people.salary),0)/people.length
-console.log(averageSalary)              
+// const averageSalary = people.reduce((accumulator,people) => accumulator + parseInt(people.salary),0)/people.length
+// console.log(averageSalary)              
 // Output--> 33545.454545454544
 
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-2-Who are the people that are currently older than 30?
+//2-Who are the people that are currently older than 30?
 //Sbse phle humme current date pata honi chahiye then hum previous date ko substract karenge
 // Current date k liye  new Date().getFullYear
 //Previous Date k liye  new Date(person.DOB).getFullYear()
-   const OlderthanThirty = people.filter(person => new Date().getFullYear() - new Date(person.DOB).getFullYear() > 30  )
+//    const OlderthanThirty = people.filter(person => new Date().getFullYear() - new Date(person.DOB).getFullYear() > 30  )
    
-    console.log('Get Data',OlderthanThirty)
+//     console.log('Get Data',OlderthanThirty)
  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- 3-Get a list of the people's full name(firstName and lastName)
+//  3-Get a list of the people's full name(firstName and lastName)
  
  //Here we use simple map approach             
- people.map(person => {person.firstName}{person.lastName})
+//  people.map(person => {person.firstName}{person.lastName})
  // people.map(({firstName,lastName})=>{firstName}{lastName}
- people.map({...people,fullName:`{person.firstName}{person.lastName}`})
+//  people.map({...people,fullName:`{person.firstName}{person.lastName}`})
 
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- 4-Get a list of people in the array ordered from youngest to oldest.
+//  4-Get a list of people in the array ordered from youngest to oldest.
   //Here sorting approach is used
- const youngestToOldest = people.sort((personA,personB)=> new Date(personA.DOB) - new Date(personB.DOB))
-    console.log(youngestToOldest)
+//  const youngestToOldest = people.sort((personA,personB)=> new Date(personA.DOB) - new Date(personB.DOB))
+//     console.log(youngestToOldest)
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-5-How many people are there in each department?
+// 5-How many people are there in each department?
  //Very Important Approach we should know
 //const peopleInDepartment = people.reduce((accumulator,person)=>({...accumulator,[person.department]:accumulator[person.department] + 1}),{})
 //console.log(peopleInDepartment)

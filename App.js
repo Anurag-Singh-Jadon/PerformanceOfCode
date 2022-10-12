@@ -15,6 +15,7 @@ import {
   View,
 } from 'react-native';
 import ExerciseOne from './src/Screens/ArrayMethod/ExerciseOne';
+import ExerciseTwo from './src/Screens/ArrayMethod/ExerciseTwo';
 import ConditionalRendering from './src/Screens/ConditionalRendering';
 import DimensionUse from './src/Screens/DimensionUse';
 import FlatListPerformance from './src/Screens/FlatListPerformance';
@@ -32,7 +33,7 @@ const App = () => {
 
   return (
   
-      <ExerciseOne/>
+      <ExerciseTwo/>
   
   
   );
