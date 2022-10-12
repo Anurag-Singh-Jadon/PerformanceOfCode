@@ -14,7 +14,9 @@ import {
   FlatList,
   View,
 } from 'react-native';
+import ExerciseOne from './src/Screens/ArrayMethod/ExerciseOne';
 import ConditionalRendering from './src/Screens/ConditionalRendering';
+import DimensionUse from './src/Screens/DimensionUse';
 import FlatListPerformance from './src/Screens/FlatListPerformance';
 import Memo from './src/Screens/Memo';
 import UseCallback from './src/Screens/UseCallback';
@@ -30,7 +32,7 @@ const App = () => {
 
   return (
   
-      <ConditionalRendering/>
+      <ExerciseOne/>
   
   
   );

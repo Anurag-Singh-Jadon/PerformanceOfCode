@@ -46,7 +46,7 @@ const ConditionalRendering = (props) => {
         </TouchableOpacity>
       </View>
      
-    {index == 1? viewOne() : index == 2 ? viewTwo() :  viewThree()}
+    {index == 1? viewOne() : index == 2 ? viewTwo() :  index ==3 ? viewThree() : viewOne()}
      
     </View>
   )
