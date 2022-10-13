@@ -30,7 +30,7 @@ const ExerciseTwo = () => {
  //2-Create a new property on each order with the total price of items ordered?
  //3-Have all the orders been delivered?
  //4-Has the customer with ID '123' made any orders?
-
+ //5-Have any products with an Id of 123 been sold?
 
  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  //1- Get a list of the orders for the customer with the ID 234 that have not been delivered?
@@ -52,19 +52,27 @@ const ExerciseTwo = () => {
 //First of all we check with every function which returns true or false 
 const haveOrderDelivered = orders.every(order =>order.delivered)
   console.log(haveOrderDelivered)
-
+//Output-true
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //4-Has the customer with ID '123' made any orders?
 //Here we can use Filter or reduce method to achive this     This give us Boolean Value
 const paricularId = orders.some(order => order.customerId === '123')
-console.log(paricularId)
+console.log('particular Id',paricularId)
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//5-Have any products with an Id of 123 been sold?
+
+const ItemSold = orders.reduce((acc,order)=> acc + order.items.reduce((acc,item)=> acc + (item.productId === '123'),0),0)
+console.log('Item Sold ==>',ItemSold)
+//Output --> 2
   return (
     <View>
       <Text>ExerciseTwo</Text>
       {orderDelivered.map((val)=><Text>{val.customerId}{val.deliveryDate}{val.delivered}</Text>)}
       {newProperty.map((v)=><Text>{v.orderTotal}</Text>)} 
+      
     </View>
   )
 }
