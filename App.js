@@ -14,6 +14,7 @@ import {
   FlatList,
   View,
 } from 'react-native';
+import ExerciseFive from './src/Screens/ArrayMethod/ExerciseFive';
 import ExerciseFour from './src/Screens/ArrayMethod/ExerciseFour';
 import ExerciseOne from './src/Screens/ArrayMethod/ExerciseOne';
 import ExerciseThree from './src/Screens/ArrayMethod/ExerciseThree';
@@ -35,7 +36,7 @@ const App = () => {
 
   return (
   
-      <ExerciseFour/>
+      <ExerciseFive/>
   
   
   );
