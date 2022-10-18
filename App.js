@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import ExerciseFive from './src/Screens/ArrayMethod/ExerciseFive';
 import ExerciseFour from './src/Screens/ArrayMethod/ExerciseFour';
-import ExerciseOne from './src/Screens/ArrayMethod/ExerciseOne';
+//import ExerciseOne from './src/Screens/ArrayMethod/ExerciseOne';
 import ExerciseThree from './src/Screens/ArrayMethod/ExerciseThree';
 import ExerciseTwo from './src/Screens/ArrayMethod/ExerciseTwo';
 import ConditionalRendering from './src/Screens/ConditionalRendering';
@@ -25,6 +25,7 @@ import FlatListPerformance from './src/Screens/FlatListPerformance';
 import Memo from './src/Screens/Memo';
 import UseCallback from './src/Screens/UseCallback';
 import UseMemoHook from './src/Screens/UseMemoHook';
+import ExerciseOneHere from './src/Screens/JavaScriptExercise/ExerciseOne'
 
 
 
@@ -36,7 +37,7 @@ const App = () => {
 
   return (
   
-      <ExerciseFive/>
+      <ExerciseOneHere/>
   
   
   );
