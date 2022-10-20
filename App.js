@@ -26,6 +26,8 @@ import Memo from './src/Screens/Memo';
 import UseCallback from './src/Screens/UseCallback';
 import UseMemoHook from './src/Screens/UseMemoHook';
 import ExerciseOneHere from './src/Screens/JavaScriptExercise/ExerciseOne'
+import ExercisePracticeTwo from './src/Screens/JavaScriptExercise/ExercisePracticeTwo';
+import ExercisePracticeThree from './src/Screens/JavaScriptExercise/ExercisePracticeThree';
 
 
 
@@ -37,7 +39,7 @@ const App = () => {
 
   return (
   
-      <ExerciseOneHere/>
+      <ExercisePracticeThree/>
   
   
   );

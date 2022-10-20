@@ -48,6 +48,15 @@ Expected Output :
  }
 console.log(formatDate())
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*5-Write a JavaScript program to create a new string adding "New!" in front of a given string.Date
+If the given string begin with "New!" already then return the original string. */
+
+const addNew = (str) =>str.indexOf('New!') === 0 ? str :
+ `New! ${str}`;
+console.log(addNew('New! offers'));
+
 const ExerciseOne = () => {
   return (
     <View>
