@@ -17,6 +17,8 @@ const ExerciseOne = () => {
 {firstName:'Aaron',lastName:'Garrett',DOB:'09/04/1985',department:'Development',salary:'39000'},
 
 ]
+
+
     //1-What is the average income of all the people in the Array?
 //2-Who are the people that are currently older than 30?
 //3-Get a list of the people's full name(firstName and lastName)
