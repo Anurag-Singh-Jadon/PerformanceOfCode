@@ -28,6 +28,7 @@ import UseMemoHook from './src/Screens/UseMemoHook';
 import ExerciseOneHere from './src/Screens/JavaScriptExercise/ExerciseOne'
 import ExercisePracticeTwo from './src/Screens/JavaScriptExercise/ExercisePracticeTwo';
 import ExercisePracticeThree from './src/Screens/JavaScriptExercise/ExercisePracticeThree';
+import ImageSlider from './src/Screens/AnimatedImageSlider/ImageSlider';
 
 
 
@@ -39,7 +40,7 @@ const App = () => {
 
   return (
   
-      <ExercisePracticeThree/>
+      <ImageSlider/>
   
   
   );
