@@ -29,6 +29,8 @@ import ExerciseOneHere from './src/Screens/JavaScriptExercise/ExerciseOne'
 import ExercisePracticeTwo from './src/Screens/JavaScriptExercise/ExercisePracticeTwo';
 import ExercisePracticeThree from './src/Screens/JavaScriptExercise/ExercisePracticeThree';
 import ImageSlider from './src/Screens/AnimatedImageSlider/ImageSlider';
+import ImageGalary from './src/Screens/AnimatedImageGalary/ImageGalary';
+import DarkThemeScreen from './src/Screens/DarkModeTheme/DarkThemeScreen';
 
 
 
@@ -40,7 +42,7 @@ const App = () => {
 
   return (
   
-      <ImageSlider/>
+      <DarkThemeScreen/>
   
   
   );
